@@ -11,5 +11,7 @@
             "name": "Rafael Rodrigues"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {}
 }
