@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Connection;
+namespace App\Services\Teclib\Connection;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;

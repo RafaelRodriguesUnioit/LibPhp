@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Teclib;
 
 use Illuminate\Http\Request;
-use App\Services\Connection\TecbaseApi;
+use App\Services\Teclib\Connection\TecbaseApi;
+
 
 class UserController
 {
