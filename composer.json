@@ -3,7 +3,7 @@
     "description": "Lib para ser reutilizados em outros projetos",
     "autoload": {
         "psr-4": {
-            "Minhalib\\Rafael\\": "src/"
+            "Minhalib\\": "src/"
         }
     },
     "authors": [

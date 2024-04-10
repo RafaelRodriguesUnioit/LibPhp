@@ -1,6 +1,6 @@
 <?php 
 
-namespace Minhalib\Logs;
+namespace Minhalib;
 
 class Logger
 {
