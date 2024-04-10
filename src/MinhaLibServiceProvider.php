@@ -1,6 +1,6 @@
 <?php
 
-namespace Teclib;
+namespace Minhalib;
 
 use Illuminate\Support\ServiceProvider;
 
