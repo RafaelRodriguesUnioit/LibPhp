@@ -19,6 +19,7 @@ class MinhaLibServiceProvider extends ServiceProvider
             __DIR__.'/Enums' => app_path('Enums/Teclib'),
             __DIR__.'/Repositories' => app_path('Repositories/Teclib'),
             __DIR__.'/Services' => app_path('Services/Teclib'),
+            __DIR__.'/../routes' => base_path('routes'),
         ];
 
         // php artisan vendor:publish --tag=teclib-resources
