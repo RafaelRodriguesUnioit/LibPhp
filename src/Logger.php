@@ -4,7 +4,7 @@ namespace Minhalib;
 
 class Logger
 {
-    public function log($message)
+    public static function log($message)
     {
         \Log::info($message);
     }
