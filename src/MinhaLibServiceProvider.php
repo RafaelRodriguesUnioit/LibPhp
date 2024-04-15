@@ -8,6 +8,7 @@ class MinhaLibServiceProvider extends ServiceProvider
 {
     public function boot()
     {
+        
         // Publish all resources
         $this->publishResources();
     }
