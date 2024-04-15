@@ -15,6 +15,7 @@ class UserController
 
     public function index()
     {
+        \Log::info("** TECLIB ** Consultando usuarios");
         try {
             $users = $this->tecbaseApi->get('/usuarios');
 
