@@ -1,5 +1,5 @@
 {
-    "name": "teclib/teclib_laravel",
+    "name": "sistemastecnol/teclib_laravel",
     "description": "A package of libraries to Tecnol funcionalities",
     "type": "library",
     "autoload": {
@@ -13,3 +13,4 @@
         "guzzlehttp/guzzle": "^7.8"
     }
 }
+
