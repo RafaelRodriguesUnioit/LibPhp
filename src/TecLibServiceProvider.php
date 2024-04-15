@@ -1,10 +1,10 @@
 <?php
 
-namespace Minhalib;
+namespace Teclib;
 
 use Illuminate\Support\ServiceProvider;
 
-class MinhaLibServiceProvider extends ServiceProvider
+class TeclibServiceProvider extends ServiceProvider
 {
     public function boot()
     {
