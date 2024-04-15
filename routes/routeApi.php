@@ -5,8 +5,12 @@ use App\Http\Controllers\Teclib\UserController;
 
 Route::group(["prefix" => "v1"], function () {
 
-    Route::group(["prefix" => "users"], function () {
-        Route::get('/consulta', [UserController::class, 'consulta']);
+    Route::group(["prefix" => "usuarios"], function () {
+        Route::get('/', [UserController::class, 'index']);
+        Route::get('/{usuario}', [UserController::class, 'show']);
+        Route::post('/', [UserController::class, 'store']);
+        Route::put('/{usuario}', [UserController::class, 'update']);
+        Route::delete('/{usuario}', [UserController::class, 'destroy']);
     });
     
 });

@@ -1,19 +1,16 @@
 {
-    "name": "minhalib/rafael",
-    "description": "Lib para ser reutilizados em outros projetos",
+    "name": "sistemastecnol/teclib_laravel",
+    "description": "A package of libraries to Tecnol funcionalities",
+    "type": "library",
     "autoload": {
         "psr-4": {
-            "Minhalib\\": "src/"
+            "Teclib\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Rafael Rodrigues"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
         "guzzlehttp/guzzle": "^7.8"
     }
 }
+

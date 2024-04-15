@@ -13,12 +13,68 @@ class UserController
         protected TecbaseApi $tecbaseApi
     ) {}
 
-    public function consulta()
+    public function index()
     {
         try {
-            $token = $this->tecbaseApi->get('/users');
+            $users = $this->tecbaseApi->get('/usuarios');
 
-            return response()->json($token);
+            return response()->json($users);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => $e->getMessage(),
+                'error_code' => $e->getCode()
+            ]);
+        }
+    }
+
+    public function show($id)
+    {
+        try {
+            $user = $this->tecbaseApi->get("/usuarios/$id");
+
+            return response()->json($user);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => $e->getMessage(),
+                'error_code' => $e->getCode()
+            ]);
+        }
+    }
+
+    public function store()
+    {
+        try {
+            $user = $this->tecbaseApi->post("/usuarios");
+
+            return response()->json($user);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => $e->getMessage(),
+                'error_code' => $e->getCode()
+            ]);
+        }
+    }
+
+    public function update($id)
+    {
+        try {
+            $user = $this->tecbaseApi->put("/usuarios/$id");
+
+            return response()->json($user);
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => $e->getMessage(),
+                'error_code' => $e->getCode()
+            ]);
+        }
+    }
+
+    public function destroy($id)
+    {
+        try {
+            $user = $this->tecbaseApi->delete("/usuarios/$id");
+
+            return response()->json($user);
         } catch (\Throwable $e) {
             return response()->json([
                 'message' => $e->getMessage(),
