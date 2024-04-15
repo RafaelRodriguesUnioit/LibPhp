@@ -1,5 +1,5 @@
 {
-    "name": "sistemastecnol/teclib_laravel",
+    "name": "teclib/teclib_laravel",
     "description": "A package of libraries to Tecnol funcionalities",
     "type": "library",
     "autoload": {
